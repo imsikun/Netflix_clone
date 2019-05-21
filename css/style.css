@@ -1,5 +1,6 @@
 :root {
   --primary-color: #e50914;
+  --dark-color: #141414;
 }
 
 * {
@@ -115,11 +116,115 @@ img {
   margin: 0 0 2rem;
 }
 
+/* tabs */
+.tabs {
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 2px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* container */
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+
+.tabs p {
+  font-size: 1rem;
+  padding-top: 0.3rem;
+}
+
+.tabs .container>div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container>div:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.tab-border {
+  border-bottom: var(--primary-color) 2px solid;
+}
+
+/* text style */
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.2rem;
+
+}
+
+.text-lg {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
+}
+
+
+/* tab-content */
+.tab-content {
+  padding: 2rem 0;
+  background: #000;
+  color: #fff;
+}
+
+#tab-1-content .tab-1-content-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#tab-2-content .tab-2-content-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#tab-2-content .tab-2-content-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 
 
-/* Buttons */
+
+/* Buttons  utilities */
 .btn {
   display: inline-block;
   background: var(--primary-color);
@@ -145,12 +250,12 @@ img {
 
 .btn-xl {
   font-size: 1.5rem;
-  padding: 1.5rem 2.1rem;
+  padding: 1rem 1.7rem;
   text-transform: uppercase;
 }
 
 .btn-lg {
-  font-size: 1.5rem;
-  padding: 0.8rem 1.3rem;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
   text-transform: uppercase;
 }
